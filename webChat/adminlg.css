@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 40px;
+    align-items: center;
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+}
+.formHolder{
+    width: 40%;
+    height: 500px;
+    background-color: blue;
+    margin: auto;
+}
+input[type=text],input[type=email],input[type=password]{
+
+    width: 300px;
+    height: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 20px;
+}
+input[type=text],input[type=email],input[type=password]{
+    outline: none;
+}
+#SignInSbmt{
+    width: 100px;
+    height: 25px;
+    align-self: center;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.usersContainer{
+    flex: 1;
+}
+#chatContainer{
+    background-color: green;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.usersContainer p{
+    text-align: center;
+    padding-top: 14px;
+    margin-bottom: 20px;
+}
+#usersChatsContainer{
+    display: flex;
+    flex-direction: column;
+}
+.userChats{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    background-color: red;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.userChats img{
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 16px;
+    margin-top: 4px;
+}
+.date{
+    flex: 1;
+    margin: auto;
+    margin-left: 30px;
+}
+.newChat{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    margin: 14px 10px 0 0;
+}
+#messagesHolder{
+    flex: 10;
+   
+}
+.controller{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.imageFile{
+    height: 38px;
+    width: 38px;
+    margin-right: 20px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+#inputText{
+    flex: 1;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border:none ;
+}
+#submitBtn{
+    margin: 5px 0 5px 10px;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.msgLeft{
+    padding: 4px 2%;
+    color: white;
+    border: 1px solid white;
+    max-width: 200px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+    align-self:flex-start;
+    margin-left: 10px;
+    
+}
+.msgRight{
+    padding: 4px 2%;
+    color: white;
+    border: 1px solid white;
+    max-width: 250px;
+    background-color: rgba(20,20,20, 0.9);
+    border-radius: 20px;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+#messagesHolder{
+    flex: 10;
+    background-color: #777777;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
